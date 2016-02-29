@@ -1,7 +1,5 @@
 Shoppy/Include/
 Shoppy/Lib/
 Shoppy/Scripts/
-
-
-
-
+*.sublime-project
+*.sublime-workspace
