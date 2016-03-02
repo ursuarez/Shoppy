@@ -7,4 +7,3 @@ from .models import Product
 class AdminProduct(admin.ModelAdmin):
 	list_display = ('id','name','description','category','price',)
 	list_filter = ('category',)
-
