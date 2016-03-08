@@ -8,10 +8,17 @@
 	<h1 style="color:red">
 		Hola
 	</h1>
-	<ul>
+	<!-- <ul>
 		<li>Queso</li>
 		<li>Yogurth</li>
 		<li>Espejo</li>
+	</ul> -->
+	<ul>
+		{% for pr in product %}
+			<li>
+				{{ pr.name }}
+			</li>
+		{% endfor %}
 	</ul>
 </body>
 </html>
