@@ -17,6 +17,7 @@
 		{% for pr in product %}
 			<li>
 				{{ pr.name }}
+				<img src="{{ pr.image.url }}" alt="">
 			</li>
 		{% endfor %}
 	</ul>
