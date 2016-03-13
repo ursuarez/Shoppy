@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render, get_object_or_404
 
+from .forms import ProductForm
 from .models import Product
 
 def hello_world(request):
@@ -20,3 +21,11 @@ def product_detail(request, pk):
 		'product': product
 	}
 	return HttpResponse(template.render(context, request))
+
+def new_product(request):
+	template = loader.get_template('new_product.html')
+	form = ProductForm()
+	context = {
+		'form': form
+	}
+	return HttpResponse(template.render(context,request))
